@@ -76,7 +76,7 @@ export function RotatedPaper({ className = '', isMobile = false }) {
       w-[99.47vw] h-[clamp(488px,57.81dvh,941.2298px)] bg-white rounded-lg
       md:w-[clamp(640.7787px,83.33vw,880px)] md:h-[67.38dvh]
       md-landscape:w-[880.0000262670924px] md-landscape:h-[537px]
-      lg:w-[clamp(880px,59vw,1540px)] lg:h-[clamp(538px,58dvh,941px)]
+      lg:w-[clamp(880px,59vw,1540px)] lg:h-[clamp(538px,62dvh,941px)]
       ${className}
     `}
     ></div>
@@ -435,8 +435,8 @@ export default function RotatedPaperDemo({
         <div className='relative transform -rotate-6'>
           <RotatedPaper isMobile={isMobile} />
           <div className='absolute inset-0 flex flex-col items-center justify-center pr-8 pl-8 gap-[71px] md:gap-[82px] lg:gap-[88px] text-black z-[110] transform rotate-6'>
-            <div className='text-center w-[79%] font-medium text-[clamp(17px,1.5vw,38.5px)]'>
-              <p className='leading-relaxed break-keep'>안녕하세요.</p>
+            <div className='text-center w-[79%] font-medium text-[17px] md:text-[clamp(17px,1.5vw,38.5px)]'>
+              <p className='leading-[160%] break-keep'>안녕하세요.</p>
               <p className='break-keep'>2025 MEP 〈Newformative〉에 {displayName}님을 초대합니다.</p>
               <p>
                 전시는 8월 22일부터 27일까지, 삼성전자 서울 R&D 캠퍼스 A타워 2층, 갤러리 1, 2에서 진행됩니다.
