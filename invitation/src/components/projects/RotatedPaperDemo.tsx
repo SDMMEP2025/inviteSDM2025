@@ -435,7 +435,7 @@ export default function RotatedPaperDemo({
         <div className='relative transform -rotate-6'>
           <RotatedPaper isMobile={isMobile} />
           <div className='absolute inset-0 flex flex-col items-center justify-center pr-8 pl-8 gap-[71px] md:gap-[82px] lg:gap-[88px] text-black z-[110] transform rotate-6'>
-            <div className='text-center w-[79%] font-medium text-[17px] md:text-[clamp(17px,1.5vw,38.5px)]'>
+            <div className='text-center w-[264px] md:w-[85%] font-medium text-[17px] md:text-[clamp(17px,1.5vw,38.5px)]'>
               <p className='leading-[160%] break-keep'>안녕하세요.</p>
               <p className='break-keep'>2025 MEP 〈Newformative〉에 {displayName}님을 초대합니다.</p>
               <p>
