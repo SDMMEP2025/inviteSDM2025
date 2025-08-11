@@ -43,7 +43,9 @@ export default function DirectionsPage({ onBackClick }) {
   return (
     <div className='absolute top-0 h-[100dvh] w-[100vw] flex items-center justify-center bg-gradient-to-br from-pink-400 to-pink-500 z-10'>
       <div className='w-full max-w-5xl px-8 py-16 flex flex-col items-center text-black gap-[clamp(70px,8.36dvh,83px)]'>
-        <h1 className='justify-center text-neutral-800 text-[clamp(22px,1.5vw,38.5px)] font-medium leading-loose'>Directions</h1>
+        <h1 className='justify-center text-neutral-800 text-[clamp(22px,1.5vw,38.5px)] font-medium leading-loose'>
+          Directions
+        </h1>
 
         <div className='flex flex-col gap-[clamp(40px,4.52dvh,115.75px)]'>
           <img src='/images/map.svg' className='block md:hidden' />
@@ -89,32 +91,42 @@ export default function DirectionsPage({ onBackClick }) {
               )}
             </AnimatePresence>
 
-            <a
-              href={mapLink}
-              target='_blank'
-              rel='noopener noreferrer'
-              className="text-center justify-start text-neutral-800 text-[clamp(17px, 1.23vw, 31.5px)] font-normal md:font-medium font-['Pretendard'] underline leading-7"
-            >
-              길 찾기
-            </a>
-            <button
-              onClick={onBackClick}
-              className='absolute top-4 right-4 md:top-9 md:right-9 text-center justify-start text-neutral-800 text-base lg:text-lg font-normal md:font-medium leading-7'
-            >
-              <svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'>
-                <g clipPath='url(#clip0_2149_10465)'>
-                  <path
-                    d='M28.4961 9.6067L26.3811 7.4917L17.9961 15.8767L9.61109 7.4917L7.49609 9.6067L15.8811 17.9917L7.49609 26.3767L9.61109 28.4917L17.9961 20.1067L26.3811 28.4917L28.4961 26.3767L20.1111 17.9917L28.4961 9.6067Z'
-                    fill='#222222'
-                  />
-                </g>
-                <defs>
-                  <clipPath id='clip0_2149_10465'>
-                    <rect width='36' height='36' fill='white' />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+            <div className='flex flex-col justify-center items-center gap-10'>
+              <a
+                href={mapLink}
+                target='_blank'
+                rel='noopener noreferrer'
+                className="text-center justify-start text-neutral-800 text-[clamp(17px, 1.23vw, 31.5px)] font-normal md:font-medium font-['Pretendard'] underline leading-7"
+              >
+                길 찾기
+              </a>
+              <button
+                onClick={onBackClick}
+                className='absolute top-4 right-4 md:top-9 md:right-9 text-center justify-start text-neutral-800 text-base lg:text-lg font-normal md:font-medium leading-7'
+              >
+                <svg xmlns='http://www.w3.org/2000/svg' width='36' height='36' viewBox='0 0 36 36' fill='none'>
+                  <g clipPath='url(#clip0_2149_10465)'>
+                    <path
+                      d='M28.4961 9.6067L26.3811 7.4917L17.9961 15.8767L9.61109 7.4917L7.49609 9.6067L15.8811 17.9917L7.49609 26.3767L9.61109 28.4917L17.9961 20.1067L26.3811 28.4917L28.4961 26.3767L20.1111 17.9917L28.4961 9.6067Z'
+                      fill='#222222'
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id='clip0_2149_10465'>
+                      <rect width='36' height='36' fill='white' />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <div className="flex justify-center text-center items-center text-[#00000080] text-[15px] xl:text-[20px] leading-snug">
+                *주차 공간이 협소하오니,
+                <br className='block md:block md-landscape:hidden lg:hidden'/>
+                {" "}
+                대중교통 이용을 권장드립니다.
+
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>

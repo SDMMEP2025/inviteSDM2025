@@ -439,7 +439,7 @@ export default function RotatedPaperDemo({
               <p className='leading-relaxed break-keep'>안녕하세요.</p>
               <p className='break-keep'>2025 MEP 〈Newformative〉에 {displayName}님을 초대합니다.</p>
               <p>
-                전시는 8월 22일부터 27일까지, 삼성전자 서울 R&D 캠퍼스 A타워 2층, 이노베이션 스튜디오에서 진행됩니다.
+                전시는 8월 22일부터 27일까지, 삼성전자 서울 R&D 캠퍼스 A타워 2층, 갤러리 1, 2에서 진행됩니다.
                 소중한 발걸음으로 자리를 빛내주세요.
               </p>
             </div>
