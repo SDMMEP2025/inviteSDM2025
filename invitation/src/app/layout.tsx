@@ -6,7 +6,7 @@ import '@/styles/globals.css'
 import { Layout } from '@/components/projects/Layout'
 
 export const metadata: Metadata = {
-  metadataBase: new URL(METADATA.url), 
+  metadataBase: new URL(METADATA.url),
   alternates: {
     canonical: METADATA.url,
   },
@@ -78,23 +78,20 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico" },
-      { url: '/icons/apple-icon.png' },
+      { url: '/icons/apple-touch-icon.png' },
       { url: '/icons/favicon-16x16.png', sizes: '16x16' },
       { url: '/icons/favicon-32x32.png', sizes: '32x32' },
-      { url: '/icons/apple-icon.png', sizes: '180x180' },
+      { url: '/icons/apple-touch-icon.png', sizes: '180x180' },
     ],
     apple: [
-      { url: '/icons/apple-icon.png' },
+      { url: '/icons/apple-touch-icon.png' },
       { url: '/icons/favicon-16x16.png', sizes: '16x16' },
       { url: '/icons/favicon-32x32.png', sizes: '32x32' },
-      { url: '/icons/favicon-180x180.png', sizes: '180x180' },
-      { url: '/icons/apple-icon.png', sizes: '180x180' },
+      { url: '/icons/apple-touch-icon.png', sizes: '180x180' },
     ],
-    shortcut: ["/favicon.ico"],
     other: {
       rel: 'mask-icon',
-      url: '/icons/favicon.svg',
+      url: '/icons/safari-pinned-tab.svg',
       color: '#000000',
     },
   },
