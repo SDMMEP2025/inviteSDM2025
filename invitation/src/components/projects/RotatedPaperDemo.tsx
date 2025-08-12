@@ -442,6 +442,8 @@ export default function RotatedPaperDemo({
                 전시는 8월 22일부터 27일까지, 삼성전자 서울 R&D 캠퍼스 A타워 2층
                 <br/>
                 갤러리 1, 2에서 진행됩니다.
+                <br className='block md-ladnscape:hidden lg:hidden'/>
+                {' '}
                 소중한 발걸음으로 함께해 주세요.
               </p>
             </div>

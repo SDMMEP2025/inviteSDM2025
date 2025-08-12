@@ -119,7 +119,7 @@ export default function DirectionsPage({ onBackClick }) {
                 </svg>
               </button>
               <div className="flex justify-center text-center items-center text-[#00000080] text-[15px] xl:text-[20px] leading-snug">
-                *주차 공간이 협소하오니,
+                *주차가 불가하니,
                 <br className='block md:block md-landscape:hidden lg:hidden'/>
                 {" "}
                 대중교통 이용을 권장드립니다.
