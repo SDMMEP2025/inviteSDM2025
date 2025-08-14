@@ -13,7 +13,7 @@ import { useIsPhone } from '@/hooks/useIsPhone'
 
 export default function Page() {
   const [showDirections, setShowDirections] = useState(false)
-  const [displayName, setDisplayName] = useState('김삼성')
+  const [displayName, setDisplayName] = useState('여러분')
   const [isMobile, setIsMobile] = useState(false)
   const [isMotionPanelOpen, setIsMotionPanelOpen] = useState(false)
   const [isGyroPopupVisible, setIsGyroPopupVisible] = useState(false)
@@ -56,7 +56,7 @@ export default function Page() {
         const decodedName = decodeURIComponent(nameFromUrl)
         setDisplayName(decodedName)
       } else {
-        setDisplayName('김삼성') // 파라미터가 없으면 기본값
+        setDisplayName('여러분') // 파라미터가 없으면 기본값
       }
     }
 
