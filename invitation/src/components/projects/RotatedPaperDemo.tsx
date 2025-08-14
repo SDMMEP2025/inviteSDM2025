@@ -438,7 +438,7 @@ export default function RotatedPaperDemo({
             <div className='text-center w-[264px] md:w-[85%] font-medium text-[17px] md:text-[clamp(17px,1.5vw,38.5px)]'>
               <p className='leading-[160%] break-keep'>안녕하세요.</p>
               <p className='break-keep'>
-                2025 MEP 〈Newformative〉에 {displayName}
+                2025 MEP 〈New Formative〉에 {displayName}
                 {displayName !== '여러분' && '님'}을 초대합니다.
               </p>
 
